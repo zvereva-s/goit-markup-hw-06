@@ -381,13 +381,10 @@
             </div>
             <div class="subscribe-email">
                 <p class="title-subscribe">Подпишитесь на рассылку</p>
-                <div class="form-sub"> 
                     <form class="form" > 
                         <input class="form-input" type="email" name="mail" id="mail" placeholder="E-mail"/>
-                        <label class="form-lable" for="mail"></label>
                         <button class="btn-sub" type="submit">Подписаться</button>
                     </form>
-                </div>
             </div>
         </address>
         </div>
@@ -402,7 +399,6 @@
                 <use href="./images/sprite.svg#close-block"></use>
             </svg>
             </button>
-            <div class="form-modal">
                 <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form-feedback">
                     <div class="name field">
@@ -436,17 +432,16 @@
                         <label class="form-comment label" for="comment">Комментарий</label>
                         <textarea class="input" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </div>
-                    <div class="policy field">
-                        <label class="form-policy label" for="policy">Соглашаюсь с рассылкой и принимаю &nbsp<a class="link policy" href="/">Условия договора</a>
+                        <label class="form-policy label" for="policy">
+                        <input class="check visually-hidden" type="checkbox" name="policy" id="policy"/>
+                        <span class="icon-check"></span> 
+                        Соглашаюсь с рассылкой и принимаю &nbsp
+                        <a class="link policy" href="/">Условия договора</a>
                         </label>
-                        <input class="visually-hidden" type="checkbox" name="policy" id="policy"/>
-                    </div>
                     <button class="feedback-submit" type="submit">Отправить</button>
                 </form>
             </div>
         </div>
-    </div>
-
 <script src="./js/modal.js"></script>
 
 </body>
