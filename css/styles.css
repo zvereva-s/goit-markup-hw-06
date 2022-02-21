@@ -813,8 +813,11 @@ button {
 }
 
 .field {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
 
 }
 .title-form {
@@ -832,6 +835,7 @@ button {
   color: #212121;
 }
 .label {
+ 
   font-size: 12px;
   line-height: 1.16666
 
@@ -840,6 +844,7 @@ button {
   color: #757575;
 }
 .input {
+
   margin-bottom:10px;
   padding-left:12px;
   padding-top: 10px;
@@ -856,24 +861,28 @@ line-height: 1.16666;
 letter-spacing: 0.01em;
 
 color: rgba(117, 117, 117, 0.5);
+cursor: pointer;
+}
+.input:hover {
+  border: 1px solid var(--brand-color);
 }
 
 .comment .input {
+  display: block;
+
+  margin-bottom: 0;
   height: 120px;
 }
 .policy.field {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 
   margin-top: 20px;
-  width: auto;
+  
 }
-.checkbox-policy {
-  display: block;
-}
+
 .form-policy {
-display: block;
+display: flex;
 
 font-size: 14px;
 line-height: 1.714;
@@ -882,11 +891,26 @@ letter-spacing: 0.03em;
 
 color: #757575;
 }
+.form-policy.label {
+display: flex;
+
+font-family: inherit;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 1.7142;
+
+letter-spacing: 0.03em;
+
+color: #757575;
+
+}
 .link.policy {
+  display: flex;
+
   color:var(--brand-color);
   text-decoration: underline;
 }
-
 
 .feedback-submit {
   display: flex;
@@ -900,6 +924,8 @@ color: #757575;
   margin-top: 30px;
 
   background-color: #2196f3;
+
+  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
@@ -910,4 +936,17 @@ color: #757575;
   letter-spacing: 0.06em;
 
   color: #ffffff;
+}
+
+.form-modal .icon {
+  position: absolute;
+  left:12px; 
+  top:6px;
+  transform: translateY(100%);
+
+  fill:#212121;
+}
+
+.field:hover .icon {
+  fill:var(--brand-color);
 }

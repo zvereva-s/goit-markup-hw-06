@@ -407,14 +407,29 @@
                 <form class="form-feedback">
                     <div class="name field">
                         <label class="form-label label" for="name">Имя</label>
+                        <span class="icon"> 
+                            <svg width="18" height="18">
+                                <use href="./images/sprite.svg#person"></use>
+                            </svg>
+                        </span>
                         <input class="input" type="name" name="name" id="name"/>
                     </div>
                     <div class="phone field">
                         <label class="form-label label" for="tel">Телефон</label>
+                        <span class="icon">
+                            <svg width="18" height="18">
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                        </span>
                         <input class="input" type="tel" name="tel" id="tel"/>
                     </div>
                     <div class="email field">
                         <label class="form-email label" for="email">Почта</label>
+                        <span class="icon">
+                            <svg width="18" height="18">
+                                <use href="./images/sprite.svg#envelope"></use>
+                            </svg>
+                        </span>
                         <input class="input" type="email" name="email" id="email"/>
                     </div>
                     <div class="comment field">
@@ -422,9 +437,13 @@
                         <textarea class="input" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </div>
                     <div class="policy field">
-                        <input class="checkbox-policy" type="checkbox" name="policy" id="policy" />
-                        <label class="form-policy label" for="policy">Соглашаюсь с рассылкой и принимаю 
-                            <a class="link policy" href="/">Условия договора</a>
+                        <label class="form-policy label" for="policy">Соглашаюсь с рассылкой и принимаю &nbsp<a class="link policy" href="/">Условия договора</a>
+                            <input class="visually-hidden" type="checkbox" name="policy" id="policy"/>
+                            <span class="icon">
+                                <svg>
+                                    <use></use>
+                                </svg>
+                            </span>
                         </label>
                     </div>
                     <button class="feedback-submit" type="submit">Отправить</button>
