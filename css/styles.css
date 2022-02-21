@@ -811,14 +811,11 @@ button {
 .form-modal {
   padding: 32px;
 }
-
 .field {
   position: relative;
 
   display: flex;
   flex-direction: column;
-
-
 }
 .title-form {
   margin-bottom: 12px;
@@ -909,8 +906,7 @@ color: #757575;
   display: flex;
 
   color:var(--brand-color);
-  text-decoration: underline;
-}
+  text-decoration: underline;}
 
 .feedback-submit {
   display: flex;
