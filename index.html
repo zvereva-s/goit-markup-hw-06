@@ -405,28 +405,29 @@
             <div class="form-modal">
                 <p class="title-form">Оставьте свои данные, мы вам перезвоним</p>
                 <form class="form-feedback">
-                    <div class="name-input">
-                        <input class="input" type="name" name="name" id="name"/>
+                    <div class="name field">
                         <label class="form-label label" for="name">Имя</label>
+                        <input class="input" type="name" name="name" id="name"/>
                     </div>
-                    <div class="phone-input">
-                        <input class="input" type="tel" name="tel" id="tel"/>
+                    <div class="phone field">
                         <label class="form-label label" for="tel">Телефон</label>
+                        <input class="input" type="tel" name="tel" id="tel"/>
                     </div>
-                    <div class="email-input">
-                        <input class="input" type="email" name="email" id="email"/>
+                    <div class="email field">
                         <label class="form-email label" for="email">Почта</label>
+                        <input class="input" type="email" name="email" id="email"/>
                     </div>
-                    <div class="comment-input">
+                    <div class="comment field">
                         <label class="form-comment label" for="comment">Комментарий</label>
-                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        <textarea class="input" name="comment" id="comment" placeholder="Введите текст"></textarea>
                     </div>
-                    <div class="policy-input">
+                    <div class="policy field">
+                        <input class="checkbox-policy" type="checkbox" name="policy" id="policy" />
                         <label class="form-policy label" for="policy">Соглашаюсь с рассылкой и принимаю 
-                         <a href="/">Условия договора</a></label>
-                        <input type="policy-checkbox" name="policy" id=""/>
+                            <a class="link policy" href="/">Условия договора</a>
+                        </label>
                     </div>
-                    <button type="feedback-submit">Отправить</button>
+                    <button class="feedback-submit" type="submit">Отправить</button>
                 </form>
             </div>
         </div>

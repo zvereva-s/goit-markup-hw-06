@@ -781,8 +781,8 @@ button {
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  width: 528px;
-  min-height: 581px;
+  width: 530px;
+  min-height: 580px;
   padding: 8px;
   background-color: var(--brand-white);
 }
@@ -807,8 +807,20 @@ button {
   fill: #000000;
 }
 /* Оформление формы на модельном окне */
+
+.form-modal {
+  padding: 32px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+}
 .title-form {
   margin-bottom: 12px;
+
+  width: 100%;
 
   font-weight: bold;
   font-size: 20px;
@@ -819,9 +831,6 @@ button {
 
   color: #212121;
 }
-.name-input {
-  display: flex;
-}
 .label {
   font-size: 12px;
   line-height: 1.16666
@@ -830,13 +839,65 @@ button {
 
   color: #757575;
 }
+.input {
+  margin-bottom:10px;
+  padding-left:12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  height: 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  font-size: 12px;
+line-height: 1.16666;
+letter-spacing: 0.01em;
+
+color: rgba(117, 117, 117, 0.5);
+}
+
+.comment .input {
+  height: 120px;
+}
+.policy.field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 20px;
+  width: auto;
+}
+.checkbox-policy {
+  display: block;
+}
+.form-policy {
+display: block;
+
+font-size: 14px;
+line-height: 1.714;
+
+letter-spacing: 0.03em;
+
+color: #757575;
+}
+.link.policy {
+  color:var(--brand-color);
+  text-decoration: underline;
+}
+
+
 .feedback-submit {
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
 
   width: 200px;
   height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
