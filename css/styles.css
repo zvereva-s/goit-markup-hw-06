@@ -894,7 +894,9 @@ button {
   color: #757575;
 
 }
-
+textarea {
+  resize: none;
+}
 .form-policy {
 display: flex;
 align-items: center;
