@@ -62,14 +62,17 @@ button {
   display: block;
 }
 .visually-hidden {
+  position: absolute;
   width: 1px;
   height: 1px;
-
   margin: -1px;
   border: 0;
-
+  padding: 0;
+  
   white-space: nowrap;
   clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* хэдэр */
@@ -236,7 +239,8 @@ button {
 /* кнопка заказать на баннере  */
 .banner .order {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+  background-color var(--time-delay) var(--cubic);
 
   margin: 30px auto 0;
   padding: 10px 32px;
@@ -255,6 +259,10 @@ button {
   border: transparent;
 }
 
+.banner .order:hover, 
+.banner .order:focus {
+  background-color:#188CE8;
+}
 /* общее оформление секций  */
 .section {
   padding-top: 94px;
@@ -600,6 +608,7 @@ button {
   content: "";
 
   display: block;
+  transition: background-color var(--time-delay) var(--cubic);
 
   width: 24px;
   height: 24px;
@@ -609,6 +618,11 @@ button {
   background-repeat: no-repeat;
   background-size: auto;
   background-position: center;
+}
+.btn-sub:hover, 
+.btn-sub:focus {
+  background-color:#188CE8;
+
 }
 /* Страница Портфолио  */
 .container.portfolio {
@@ -835,6 +849,8 @@ button {
 
   display: flex;
   flex-direction: column;
+
+  margin-bottom:10px;
 }
 .title-form {
   margin-bottom: 12px;
@@ -862,7 +878,7 @@ button {
 .input {
   transition: border var(--time-delay) var(--cubic);
 
-  margin-bottom:10px;
+  
   padding-left: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -872,6 +888,7 @@ button {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  outline: none;
 
   font-size: 12px;
   line-height: 1.16666;
@@ -894,11 +911,22 @@ button {
   color: #757575;
 
 }
+
 textarea {
   resize: none;
 }
+
+.policy-field {
+  display: flex;
+  align-items: center;
+
+
+  height: 24px;
+}
+
 .form-policy {
 display: flex;
+justify-content: center;
 align-items: center;
 
 margin-top:20px ;
@@ -910,8 +938,8 @@ letter-spacing: 0.03em;
 
 color: #757575;
 }
-.check {
-  display: block;
+.policy-field span {
+  display: inline-block;
 }
 
 .link.policy {
@@ -948,7 +976,8 @@ color: #757575;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow var(--time-delay) var(--cubic);
+  transition: box-shadow var(--time-delay) var(--cubic),
+  background-color var(--time-delay) var(--cubic);
 
   width: 200px;
   height: 50px;
@@ -972,6 +1001,7 @@ color: #757575;
 .feedback-submit:hover, 
 .feedback-submit:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color:#188CE8;
 }
 
 .form-feedback .icon {
